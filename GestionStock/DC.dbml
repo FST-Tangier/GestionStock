@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="maBase" Class="DCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\maBase.mdf;Integrated Security=True" SettingsObjectName="GestionStock.Properties.Settings" SettingsPropertyName="maBaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.article" Member="article">
+    <Type Name="article">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Libelle" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PU" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
